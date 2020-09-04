@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Bebas-Regular';
+  src: url('../fonts/BebasNeue-Regular.otf');
+}
+footer {
+  max-width: 90vw;
+  text-align: center;
+  color: #aaa;
+  background-color: #444;
+  font-size: 20px;
+  font-family: 'Bebas-Regular', sans-serif;
+  margin: 0;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 15px;
+  display: inline-block;
+  padding-left: 80px;
+}
+
+.footer-social {
+  float: right;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 54px;
+  height: 52px;
+  padding: 0px 20px;
+  padding-top: 2px;
+}
+.footer-social a {
+  color: inherit;
+  transition: 0.3s;
+}
+.footer-social a:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    text-align: left;
+  }
+  footer p {
+    padding-left: 20px;
+  }
+}

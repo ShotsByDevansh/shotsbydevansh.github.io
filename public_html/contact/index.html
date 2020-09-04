@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arora - Contact</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="../media/small-logo.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="../css/navigation.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/footer.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/contact.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="header-div-logo">
+        <img src="../media/Arora-Logo.png" alt="" class="header-logo">
+      </div>
+      <div class="header-div">
+        <ul class="header-menu">
+          <a href="../"><li>Home</li></a>
+          <a href="../about"><li>About</li></a>
+          <a href="../gallery"><li>Gallery</li></a>
+          <a href="../contact"><li class="header-li-active">Contact</li></a>
+        </ul>
+        <a href="javascript:void(0);" class="small-menu-button" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <div id="myNav" class="menu-overlay">
+      <a href="javascript:void(0)" class="menu-close" onclick="closeNav()">&times;</a>
+      <!-- Overlay content -->
+      <div class="menu-overlay-content">
+        <a href="../">Home</a>
+        <a href="../about">About</a>
+        <a href="../gallery">Gallery</a>
+        <a href="../contact">Contact</a>
+      </div>
+    </div>
+    <div class="contact-div">
+      <div class="contact-text">
+        <h1 class="contact-title">Contact Us</h1>
+        <p>We love hearing your feedback and suggestions. To contact us please fill out this form. We will try to contact you within the next 24 hours.</p>
+        <p><br>bijoyarora@gmail.com<br>647-818-6765</p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form method="post" action="../php/contact.php">
+        <input id="first" type="text" name="first" required placeholder="Enter first name"/><br>
+        <input id="last" type="text" name="last" required placeholder="Enter last name"/><br>
+        <input id="email" type="email" name="email" required placeholder="Enter email"/><br>
+        <textarea rows="10" cols="40" id="first" type="text" name="comments" required placeholder="Tell us about your concerns..."></textarea>
+        <input type="submit" value="Submit" class="form-submit-button">
+      </form>
+    </div>
+    <footer>
+      <p>Arora Apparel 2019</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/arora.apparel/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+  </body>
+</html>

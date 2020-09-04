@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arora Apparel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="media/small-logo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/navigation.css"/>
+    <link type="text/css" rel="stylesheet" href="css/about.css"/>
+    <link type="text/css" rel="stylesheet" href="css/footer.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-div-logo">
+        <a href="./"><img src="media/Arora-Logo.png" alt="" class="header-logo"></a>
+      </div>
+      <div class="header-div">
+        <ul class="header-menu">
+          <a href="./"><li class="header-li-active">Home</li></a>
+          <a href="about"><li>About</li></a>
+          <a href="gallery"><li>Gallery</li></a>
+          <a href="contact"><li>Contact</li></a>
+        </ul>
+        <a href="javascript:void(0);" class="small-menu-button" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <div id="myNav" class="menu-overlay">
+      <a href="javascript:void(0)" class="menu-close" onclick="closeNav()">&times;</a>
+      <!-- Overlay content -->
+      <div class="menu-overlay-content">
+        <a href="">Home</a>
+        <a href="about">About</a>
+        <a href="gallery">Gallery</a>
+        <a href="contact">Contact</a>
+      </div>
+    </div>
+    <div class="about-div">
+      <div class="about-imgs animated fadeIn delay-1s slow">
+        <img src="media/arora-logo-new-white.png" class="about-imgs-big"/>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="about-content-section one">
+        <div class="left section-text-div" data-aos="fade-right">
+          <h3 class="section-title">About Us</h3>
+          <p class="section-p">Founded in 2018, Arora Apparel is an innovative and unique brand which is soon to take off. It was created by Bijoy Arora, a local of Pickering, Ontario. <br><br> <a href="about">Learn More</a></p>
+        </div>
+        <div class="right section-img-div" data-aos="fade-left">
+          <img class="section-img" src="media/33.JPG"/>
+        </div>
+      </div>
+      <div class="about-content-section two">
+        <div class="odd-left section-img-div" data-aos="fade-right" id="left">
+          <img class="section-img" src="media/5.CR2"/>
+        </div>
+        <div class="odd-right section-text-div" data-aos="fade-left" id="right">
+          <h3 class="section-title">Black Long Sleeve</h3>
+          <p class="section-p">The second release of the Arora brand. It was extremely innovative and hand designed by Bijoy Arora, who took inspiration from Young Thug's 'Slime Language' album cover.</p>
+        </div>
+      </div>
+      <div class="about-content-section three">
+        <div class="left section-text-div" data-aos="fade-right">
+          <h3 class="section-title">Grey Hoodie</h3>
+          <p class="section-p">The third release by the Arora brand. The same design as the long sleeve, except in an extremely soft hoodie, with a beautiful shade of grey.</p>
+        </div>
+        <div class="right section-img-div" data-aos="fade-left">
+          <img class="section-img" src="media/section1.JPG"/>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Arora Apparel 2019</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/arora.apparel/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/about.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
