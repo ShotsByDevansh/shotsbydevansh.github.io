@@ -1,12 +1,12 @@
 function openNav() {
-  document.getElementById("myNav").style.height = "100vh";
+  document.getElementById("nav").style.height = "100vh";
+  document.documentElement.style.overflow='hidden';
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.height = "0vh";
+  document.getElementById("nav").style.height = "0vh";
+  document.documentElement.style.overflow='initial';
 }
-
-
 
 
 
@@ -41,3 +41,22 @@ $(window).scroll(function() {
   });    
   
 }).scroll();
+
+
+function showImage(id) {
+  var modal = document.getElementById("modal");
+  var modalImg = document.getElementById("modal-image");
+  var captionText = document.getElementById("caption");
+  
+  modal.style.display = "block";
+  modalImg.src = '/assets/' + id + '.jpg';
+  captionText.innerHTML = this.alt;
+  document.documentElement.style.overflow='hidden';
+  
+
+  const span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+    document.documentElement.style.overflow='initial';
+  }
+}
