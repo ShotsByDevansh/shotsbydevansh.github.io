@@ -286,10 +286,13 @@ body {
     font-size: 70px;
   }
   .about-p {
-    font-size: 20px;
+    font-size: 17px;
     margin: 0px 15vw;
     width: 70vw;
     font-weight: lighter;
+  }
+  .about-title{
+    font-size: 30px;
   }
 }
 

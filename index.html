@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- META -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Devansh Singh"/>
+    <meta name="description" content="Devansh Singh Photography"/>
+    <meta name="language" content="EN">
     <meta charset="utf-8">
+
+    <!-- OpenGraph Meta -->
+    <meta name="og:title" content="Devansh Singh"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:site_name" content="Devansh Singh"/>
+    <meta name="og:description" content="Devansh Singh Photography"/>
+    
     <title>Devansh Singh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="media/small-logo.png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="css/fonts.css"/>
     <link type="text/css" rel="stylesheet" href="css/navigation.css"/>
     <link type="text/css" rel="stylesheet" href="css/about.css"/>
-    <link type="text/css" rel="stylesheet" href="css/footer.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/footer.css" defer/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="about-div" data-color="white" class="panel">
-        
         <div class="about-div-inner">
             <header>
                 <div class="header-div">
@@ -25,7 +36,7 @@
                     <a href="#mywork"><li>My Work</li></a>
                     <a href="#contact"><li>Contact</li></a>
                   </ul>
-                  <a href="javascript:void(0);" class="small-menu-button" onclick="openNav()">
+                  <a href="javascript:void(0);" class="small-menu-button" onclick="openNav()" aria-label="Menu">
                     <i class="fa fa-bars"></i>
                   </a>
                 </div>
@@ -40,56 +51,170 @@
                 </div>
               </div>
         </div>
-        <div class="about-imgs animated fadeIn delay-1s slow">
+        <div class="about-imgs">
             <h1 class="top-title">Devansh Singh</h1>
         </div>
     </div>
     <section id="about" class="panel" data-color="black">
         <div class="about-inner">
             <h3 class="about-title">Hi!</h3>
-            <p class="about-p">My name is Devansh and I love taking pictures! I have over five years of experience focused in event photography (can be viewed <a href="https://devsaiadi.com/gallery" target="_blank">here</a>) as well as portraiture. I’m 18 and have been taking pictures as long as I can remember even as far back as film cameras. <br><br> Something about capturing the perfect moment and having it forever frozen in time is indescribable. The feeling of getting the frame you wanted or seeing the look on someone’s face when they see the pictures you’ve taken of them is unmatched. <br><br>This website mainly includes my experience in portraiture, however, I’m open to try anything. I hope to work with you soon!<br><br>Devansh
+            <p class="about-p">My name is Devansh and I love taking pictures! I have over five years of experience focused in event photography (can be viewed <a href="https://devsaiadi.com/gallery" target="_blank" rel="noreferrer">devsaiadi.com/gallery</a>) as well as portraiture. I’m 18 and have been taking pictures as long as I can remember even as far back as film cameras. <br><br> Something about capturing the perfect moment and having it forever frozen in time is indescribable. The feeling of getting the frame you wanted or seeing the look on someone’s face when they see the pictures you’ve taken of them is unmatched. <br><br>This website mainly includes my experience in portraiture, however, I’m open to try anything. I hope to work with you soon!<br><br>Devansh
         </div>
     </section>
     <section id="mywork" class="panel" data-color="white"> 
         <div class="gallery">
             <div class="gallery-column">
-                <img class="special" src="/assets/icey-10.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-9.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-8.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-17.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-30.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-19.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-34.jpg" alt="" loading="lazy"/>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-10.webp" type="image/webp">
+                    <source srcset="assets/icey-10.jp2" type="image/jp2">
+                    <img src="assets/icey-10.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-9.webp" type="image/webp">
+                    <source srcset="assets/icey-9.jp2" type="image/jp2">
+                    <img src="assets/icey-9.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-8.webp" type="image/webp">
+                    <source srcset="assets/icey-8.jp2" type="image/jp2">
+                    <img src="assets/icey-8.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-17.webp" type="image/webp">
+                    <source srcset="assets/icey-17.jp2" type="image/jp2">
+                    <img src="assets/icey-17.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-30.webp" type="image/webp">
+                    <source srcset="assets/icey-30.jp2" type="image/jp2">
+                    <img src="assets/icey-30.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-19.webp" type="image/webp">
+                    <source srcset="assets/icey-19.jp2" type="image/jp2">
+                    <img src="assets/icey-19.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-34.webp" type="image/webp">
+                    <source srcset="assets/icey-34.jp2" type="image/jp2">
+                    <img src="assets/icey-34.png" alt="">
+                </picture>
             </div>
             <div class="gallery-column">
-                <img class="special" src="/assets/icey-16.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-12.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-20.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-32.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-33.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-40.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-36.jpg" alt="" loading="lazy"/>
-                
+                <picture class="special" defer>
+                    <source srcset="assets/icey-16.webp" type="image/webp">
+                    <source srcset="assets/icey-16.jp2" type="image/jp2">
+                    <img src="assets/icey-16.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-12.webp" type="image/webp">
+                    <source srcset="assets/icey-12.jp2" type="image/jp2">
+                    <img src="assets/icey-12.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-20.webp" type="image/webp">
+                    <source srcset="assets/icey-20.jp2" type="image/jp2">
+                    <img src="assets/icey-20.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-32.webp" type="image/webp">
+                    <source srcset="assets/icey-32.jp2" type="image/jp2">
+                    <img src="assets/icey-32.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-33.webp" type="image/webp">
+                    <source srcset="assets/icey-33.jp2" type="image/jp2">
+                    <img src="assets/icey-33.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-40.webp" type="image/webp">
+                    <source srcset="assets/icey-40.jp2" type="image/jp2">
+                    <img src="assets/icey-40.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-36.webp" type="image/webp">
+                    <source srcset="assets/icey-36.jp2" type="image/jp2">
+                    <img src="assets/icey-36.png" alt="">
+                </picture>
             </div>
             <div class="gallery-column">
-                <img class="special" src="/assets/icey-21.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-22.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-23.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-24.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-25.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-15.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-37.jpg" alt="" loading="lazy"/>
-                
-                <img class="special" src="/assets/icey-35.jpg" alt="" loading="lazy"/>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-21.webp" type="image/webp">
+                    <source srcset="assets/icey-21.jp2" type="image/jp2">
+                    <img src="assets/icey-21.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-22.webp" type="image/webp">
+                    <source srcset="assets/icey-22.jp2" type="image/jp2">
+                    <img src="assets/icey-22.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-23.webp" type="image/webp">
+                    <source srcset="assets/icey-23.jp2" type="image/jp2">
+                    <img src="assets/icey-23.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-24.webp" type="image/webp">
+                    <source srcset="assets/icey-24.jp2" type="image/jp2">
+                    <img src="assets/icey-24.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-25.webp" type="image/webp">
+                    <source srcset="assets/icey-25.jp2" type="image/jp2">
+                    <img src="assets/icey-25.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-15.webp" type="image/webp">
+                    <source srcset="assets/icey-15.jp2" type="image/jp2">
+                    <img src="assets/icey-15.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-37.webp" type="image/webp">
+                    <source srcset="assets/icey-37.jp2" type="image/jp2">
+                    <img src="assets/icey-37.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-35.webp" type="image/webp">
+                    <source srcset="assets/icey-35.jp2" type="image/jp2">
+                    <img src="assets/icey-35.png" alt="">
+                </picture>
             </div>
             <div class="gallery-column">
-                <img class="special" src="/assets/icey-29.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-27.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-28.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-26.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-31.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-38.jpg" alt="" loading="lazy"/>
-                <img class="special" src="/assets/icey-39.jpg" alt="" loading="lazy"/>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-29.webp" type="image/webp">
+                    <source srcset="assets/icey-29.jp2" type="image/jp2">
+                    <img src="assets/icey-29.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-27.webp" type="image/webp">
+                    <source srcset="assets/icey-27.jp2" type="image/jp2">
+                    <img src="assets/icey-27.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-28.webp" type="image/webp">
+                    <source srcset="assets/icey-28.jp2" type="image/jp2">
+                    <img src="assets/icey-28.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-26.webp" type="image/webp">
+                    <source srcset="assets/icey-26.jp2" type="image/jp2">
+                    <img src="assets/icey-26.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-31.webp" type="image/webp">
+                    <source srcset="assets/icey-31.jp2" type="image/jp2">
+                    <img src="assets/icey-31.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-38.webp" type="image/webp">
+                    <source srcset="assets/icey-38.jp2" type="image/jp2">
+                    <img src="assets/icey-38.png" alt="">
+                </picture>
+                <picture class="special" defer>
+                    <source srcset="assets/icey-39.webp" type="image/webp">
+                    <source srcset="assets/icey-39.jp2" type="image/jp2">
+                    <img src="assets/icey-39.png" alt="">
+                </picture>
             </div>
         </div>
     </section>
@@ -97,18 +222,14 @@
     <section id="contact" class="panel" data-color="black">
         <div class="about-inner">
             <h3 class="about-title">Reach Out!</h3>
-            <p class="about-p">Feel free to email me at <a href="mailto:Devansh.sxngh@gmail.com" target="_blank">Devansh.sxngh@gmail.com</a> or reach out via <a href="https://www.instagram.com/shotbydevansh/" target="_blank">Instagram</a></p>    
+            <p class="about-p">Feel free to email me at <a href="mailto:devansh.sxngh@gmail.com" target="_blank" rel="noreferrer">devansh.sxngh@gmail.com</a> or reach out via <a href="https://www.instagram.com/shotbydevansh/" target="_blank">Instagram</a></p>    
         </div>   
     </section>
     <footer>
       <div class="footer-social">
-        <a href="https://www.instagram.com/shotbydevansh/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/shotbydevansh/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
     </footer>
     <script type="text/javascript" src="js/navigation.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>
